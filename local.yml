@@ -9,6 +9,7 @@
       name:
         - htop
         - tmux
+        - python3-psutil
 
   - name: copy wallpaper file
     copy:
