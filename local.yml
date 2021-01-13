@@ -17,6 +17,7 @@
       dest: /usr/share/backgrounds/ansible-wallpaper.png
       owner: root
       group: root
+      mode: 600
 
   - name: set wallpaper
     become_user: lijun
@@ -30,4 +31,9 @@
       key: "/org/gnome/desktop/background/picture-options"
       value: "'zoom'"
 
+  - name: Set lock screen background
+    become_user: lijun
+    dconf: 
+      key: "/org/gnome/desktop/screensaver/picture-uri" 
+      value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
 
