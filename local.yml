@@ -17,7 +17,6 @@
       dest: /usr/share/backgrounds/ansible-wallpaper.png
       owner: root
       group: root
-      mode: 0600
 
   - name: set wallpaper
     become_user: lijun
