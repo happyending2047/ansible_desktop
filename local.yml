@@ -24,6 +24,13 @@
       owner: root
       group: root
 
+  - name: copy monitors.xml file to user's home directory
+    copy:
+      src: files/monitors.xml
+      dest: ~/.config/monitors.xml
+      owner: lijun
+      group: lijun
+
   - name: set wallpaper
     become_user: lijun
     dconf:
