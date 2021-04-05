@@ -17,6 +17,13 @@
       owner: root
       group: root
 
+  - name: copy monitors.xml file
+    copy:
+      src: files/monitors.xml
+      dest: /var/lib/gdm/.config/monitors.xml
+      owner: root
+      group: root
+
   - name: set wallpaper
     become_user: lijun
     dconf:
