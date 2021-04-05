@@ -30,4 +30,9 @@
       key: "/org/gnome/desktop/background/picture-options"
       value: "'zoom'"
 
+  - name: Set lock screen background
+    become_user: lijun
+    dconf: 
+      key: "/org/gnome/desktop/screensaver/picture-uri" 
+      value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
 
